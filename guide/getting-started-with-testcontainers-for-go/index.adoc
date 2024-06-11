@@ -33,9 +33,9 @@ Let's start with creating a Go project.
 
 [source,shell]
 ----
-$ mkdir testcontainers-go-demo
-$ cd testcontainers-go-demo
-$ go mod init github.com/testcontainers/testcontainers-go-demo
+mkdir testcontainers-go-demo
+cd testcontainers-go-demo
+go mod init github.com/testcontainers/testcontainers-go-demo
 ----
 
 We are going to use the https://github.com/jackc/pgx[jackc/pgx] PostgreSQL Driver to interact with the Postgres database
@@ -51,10 +51,10 @@ Let's install these dependencies.
 
 [source,shell]
 ----
-$ go get github.com/jackc/pgx/v5
-$ go get github.com/testcontainers/testcontainers-go
-$ go get github.com/testcontainers/testcontainers-go/modules/postgres
-$ go get github.com/stretchr/testify
+go get github.com/jackc/pgx/v5
+go get github.com/testcontainers/testcontainers-go
+go get github.com/testcontainers/testcontainers-go/modules/postgres
+go get github.com/stretchr/testify
 ----
 
 After installing these dependencies, your `go.mod` file should look like this:
